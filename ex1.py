@@ -11,3 +11,11 @@ class Circle:
     def perimetro(self):
         
         return 2 * math.pi * self.raio
+     
+    def test_pertencente(self, ponto):
+        
+        x_ponto, y_ponto = ponto
+        x_centro, y_centro = self.centro
+
+        distancia = math.sqrt((x_ponto - x_centro) ** 2 + (y_ponto - y_centro) ** 2)
+        return distancia <= self.raio
