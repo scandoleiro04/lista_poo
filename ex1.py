@@ -6,7 +6,8 @@ class Circle:
         self.raio = raio
 
     def area(self):
-        """
-        Calcula a área do círculo.
-        """
+
         return math.pi * self.raio ** 2
+    def perimetro(self):
+        
+        return 2 * math.pi * self.raio
